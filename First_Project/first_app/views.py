@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    diction = {}
+    diction = {"insert_me": "I am from views.py"}
     return render(request,'first_app/index.html',context=diction)
 
 def test(request):
